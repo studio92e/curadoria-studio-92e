@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta enviada — Studio 92e</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --s92e-roxo: #7B3FBF;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #0a0a0f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: -20%;
+            left: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(123,63,191,0.15) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 48px 32px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 1;
+        }
+        .box img {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 16px;
+            filter: drop-shadow(0 0 12px rgba(123,63,191,0.3));
+        }
+        .icon {
+            width: 56px;
+            height: 56px;
+            background: var(--s92e-roxo);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            margin-bottom: 16px;
+            box-shadow: 0 0 20px rgba(123,63,191,0.3);
+        }
+        h1 { font-size: 20px; font-weight: 600; margin-bottom: 10px; color: #e8e6ec; }
+        p { font-size: 14px; color: #888; line-height: 1.5; }
+        .back {
+            display: inline-block;
+            margin-top: 24px;
+            font-size: 13px;
+            color: var(--s92e-roxo);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s ease;
+        }
+        .back:hover { color: #9B6FD4; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="icon">✓</div>
+        <h1>Obrigado por preencher o formulário!</h1>
+        <p>Em breve nossa equipe entrará em contato com a proposta ideal para sua marca.</p>
+        <a href="index.html" class="back">← Voltar ao início</a>
+    </div>
+</body>
+</html>
